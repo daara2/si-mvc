@@ -1,0 +1,19 @@
+{
+    "name": "suendri-uinsu/oop-praktikum-9",
+    "description": "Praktikum 9 Pemrograman Berbasis Web Lanjutan",
+    "type": "project",
+    "authors": [
+        {
+            "name": "suendri-uinsu",
+            "email": "suendri@uinsu.ac.id"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
