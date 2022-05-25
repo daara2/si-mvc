@@ -1,17 +1,17 @@
 ## Praktikum SI-MVC Pemrograman Berbasis Web Lanjutan 2021/2022
 ## Buat Folder _db serta file didalamnya
-a. database.sql
+* database.sql
 ## Buat Folder app serta empat folder didalamnya
-a. controllers
-b. core
-c. models
-d. views
+* controllers
+* core
+* models
+* views
 ## Buat Folder inc serta file didalamnya
-a. config.php
+* config.php
 ## Buat Folder layouts serta folder dan file didalamnya
-a. assets - 1) css; 2) images
-b. dashboard.php
-c. home.php
+* assets - (1) css; (2) images
+* dashboard.php
+* home.php
 ## Buat File index.php
 ## Inisialisasi Composer
 ## Set PSR-4
@@ -21,10 +21,10 @@ composer require filp/woops
 ```
 ## Buat File .htaccess
 ## Bangun teknik MVC mulai dari
-a. app/core/Bootstrap.php
-b. app/core/Controller.php
-c. app/core/Model.php
-d. app/core/Error.php
+* app/core/Bootstrap.php
+* app/core/Controller.php
+* app/core/Model.php
+* app/core/Error.php
 ## Setting Model untuk terhubung dengan Database
 ```
 app/models/Namaclass.php
