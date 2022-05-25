@@ -41,7 +41,7 @@ class Bootstrap
 				$controller->fileNotFound();
 			}
 		} else {
-			$class = "App\\Controllers\\Index";
+			$class = "App\\Controllers\\Home";
 			$controller = new $class();
 			$controller->index();
 		}
