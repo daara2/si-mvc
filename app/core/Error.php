@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 namespace App\Core;
 
 class Error
 {
-	
+
 	public function fileNotFound()
 	{
 		echo "Ini file app/controllers/Error.php - fileNotFound()";

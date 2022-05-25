@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 // Laporan error
 error_reporting(E_ALL);
@@ -6,8 +6,8 @@ error_reporting(E_ALL);
 // Mulai sesi
 session_start();
 
-// Url - 
-define("URL", "http://localhost/oop-praktikum-9");
+// Url -
+define("URL", "http://localhost/si-mvc");
 define("AST", URL . "/layouts/assets");
 
 // Path root

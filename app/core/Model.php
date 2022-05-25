@@ -1,19 +1,22 @@
-<?php 
+<?php
 
 namespace App\Core;
+
 use PDO;
 
-class Model {
+class Model
+{
 
 	protected object $db;
 
-	public function __construct() {
+	public function __construct()
+	{
 
 		try {
 
-			$this->db = new PDO ("mysql:host=localhost;dbname=dbmusicplayer", "root", "");
+			$this->db = new PDO("mysql:host=localhost;dbname=dbecommerce", "root", "");
 		} catch (Exception $e) {
-			die ("error! " . $e->getMessage());
+			die("error! " . $e->getMessage());
 		}
 	}
 }

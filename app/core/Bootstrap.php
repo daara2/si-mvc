@@ -1,13 +1,10 @@
-<?php 
+<?php
 
 namespace App\Core;
 
-/**
- * controller/action/params
- */
 class Bootstrap
 {
-	
+
 	public function __construct()
 	{
 		// Jika url diakses
@@ -19,7 +16,7 @@ class Bootstrap
 			// explode = Membagi string diantara slash
 			$url = explode('/', $url);
 			// ucfirst = Uppercase First
-			// array_shift = mengambil nilai pertama array            
+			// array_shift = mengambil nilai pertama array
 			$page = ucfirst(array_shift($url));
 
 			if (file_exists(ROOT . "app/controllers/" . $page . ".php")) {
@@ -30,7 +27,7 @@ class Bootstrap
 				if (method_exists($controller, $action)) {
 					// Parameters = controller/detail/1
 					$params = array_values($url);
-					if(!empty($params)) {
+					if (!empty($params)) {
 						call_user_func_array(array($controller, $action), $params);
 					} else {
 						$controller->{$action}(@$url);
@@ -43,7 +40,6 @@ class Bootstrap
 				$controller = new $class();
 				$controller->fileNotFound();
 			}
-
 		} else {
 			$class = "App\\Controllers\\Index";
 			$controller = new $class();

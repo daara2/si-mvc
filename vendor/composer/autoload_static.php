@@ -28,7 +28,7 @@ class ComposerStaticInit51689f3f8dc3db3bb9e292ee44d8fbe2
         ),
         'Psr\\Log\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+            0 => __DIR__ . '/..' . '/psr/log/src',
         ),
         'App\\' => 
         array (
@@ -36,11 +36,16 @@ class ComposerStaticInit51689f3f8dc3db3bb9e292ee44d8fbe2
         ),
     );
 
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit51689f3f8dc3db3bb9e292ee44d8fbe2::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit51689f3f8dc3db3bb9e292ee44d8fbe2::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit51689f3f8dc3db3bb9e292ee44d8fbe2::$classMap;
 
         }, null, ClassLoader::class);
     }

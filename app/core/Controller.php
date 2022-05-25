@@ -4,10 +4,10 @@ namespace App\Core;
 
 class Controller
 {
-	// Layout webboard
-	public function webboard($view, $data = [])
+	// Layout home
+	public function home($view, $data = [])
 	{
-		require_once ROOT . "layouts/index.php";
+		require_once ROOT . "layouts/home.php";
 	}
 
 	// layout dashboard

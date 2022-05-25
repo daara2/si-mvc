@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 namespace App\Controllers;
-// Panggil Controller
+
 use App\Core\Controller;
 
 class Dashboard extends Controller
@@ -12,5 +12,4 @@ class Dashboard extends Controller
 		$data['row_index'] = "Ini file app/controllers/Dashboard.php - index()";
 		$this->dashboard('dashboard/index', $data);
 	}
-
 }
