@@ -1,1 +1,1 @@
-<?php echo $data['row_index'];
+<h2>Welcome To My Home</h2>
